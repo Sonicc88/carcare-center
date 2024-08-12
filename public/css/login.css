@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'boonhome';
+    src: url("../fonts/boonhome-400.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'boonhome';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form {
+    position: relative;
+    width: 310px;
+    height: auto;
+    background-color: #E7E5FF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 2px 3px 1px rgb(0, 0, 0, 0.5);
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form .card_header {
+    height: 60px;
+    background-color: #1E33BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form .card_header h3 {
+    color: white;
+}
+
+#form .card_body {
+    padding: 10px;
+}
+
+/* #form .card_body form button {
+    width: 100%;
+} */
+
+label {
+    font-size: 17px;
+}
+
+form .form-group .row .form-control:focus {
+    /* border-color: #0d6efd; */
+    box-shadow: none;
+}
+
+.fa-solid {
+    position: absolute;
+    right: 0;
+    padding: 11px 5px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 6px;
+}
+
+
+input {
+    box-shadow: none;
+}
+
+form .form-group .row .form-control.error {
+    border-color: #dc3545;
+}

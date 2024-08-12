@@ -1,0 +1,16 @@
+{
+    "phetsarath": {
+        "bold": "C:\\xampp\\htdocs\\Laravel4\\exampl\\public\\\/fonts\/phetsarath_bold_c184c8b188f168d5efb35038672a1285",
+        "normal": "phetsarath_normal_f98ed27c17caad43ee25359bb415c78b"
+    },
+    "saysettha": {
+        "bold": "C:\\xampp\\htdocs\\Laravel4\\exampl\\public\\\/fonts\/saysettha_bold_1469a3c5b7bd77aa2da6b5a034ba9240",
+        "normal": "saysettha_normal_48de217262a6aa7073f29c659340e45b"
+    },
+    "times": {
+        "normal": "times_normal_4c146c9f8e5dd8746869867f820e5d8d",
+        "bold": "C:\\xampp\\htdocs\\Laravel4\\exampl\\public\\\/fonts\/times_bold_caca5e644b960ca095a9c2c17e152298",
+        "italic": "C:\\xampp\\htdocs\\Laravel4\\exampl\\vendor\\dompdf\\dompdf\/lib\/fonts\/Times-Italic",
+        "bold_italic": "C:\\xampp\\htdocs\\Laravel4\\exampl\\vendor\\dompdf\\dompdf\/lib\/fonts\/Times-BoldItalic"
+    }
+}

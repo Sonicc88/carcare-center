@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'boonhome';
+    src: url("../fonts/boonhome-400.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'boonhome';
+    font-size: 18px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #FEFEFE;
+    transition: 1s;
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#navbar .slide {
+    padding: 0 10px;
+    height: 100%;
+}
+
+#navbar .slide .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar .slide hr {
+    border-top: 2px solid gray;
+}
+
+#navbar .slide ul {
+    padding-left: 0;
+}
+
+#navbar .slide ul li {
+    display: inline-block;
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+#navbar .slide ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px 2px;
+
+}
+
+#navbar .slide ul li a.active {
+    background-color: #556080;
+    color: white;
+}
+
+#navbar .slide ul li a:hover {
+    background-color: #556080;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+/* dropdown */
+#navbar .slide ul li #mysub a {
+    padding: 3px 2px;
+    font-size: 18px;
+}
+
+#navbar .slide ul li #mysub a:hover {
+    background-color: #556080;
+    transition: all 0.5s ease;
+}
+
+#navbar .slide ul li #mysubre a {
+    padding: 3px 2px;
+    font-size: 18px;
+}
+
+#navbar .slide ul li #mysubre a:hover {
+    background-color: #556080;
+    transition: all 0.5s ease;
+}
+
+.sub-menu {
+    background-color: #E7E5FF;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.sub-menu.show {
+    max-height: 75px;
+}
+
+.sub-menu1 {
+    background-color: #E7E5FF;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.sub-menu1.show {
+    max-height: 75px;
+}
+
+/* ****************************** */
+#body {
+    position: relative;
+    left: 250px;
+    top: 0;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    background: #E7E5FF;
+    transition: 0.5s;
+}
+
+#body .top_bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #6B9DFF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+
+}
+
+#body .top_bar #menu_bar {
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #DFDFDF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#body .top_bar #logout {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+#body .top_bar #logout #drop:hover {
+    color: white;
+    background-color: red;
+}
+
+#body .top_bar #logout #drop:hover span {
+    color: white;
+}
+
+#body .top_bar p {
+    margin-top: 15px;
+    position: absolute;
+    left: 90px;
+}
+
+#body.active {
+    width: 100%;
+    left: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: fill;
+}
+
+.row .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+@media (min-width: 576px) {
+    .card-img-top {
+        height: 90px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+#myTable_length {
+    display: none;
+
+}
+
+#myTable_length,
+#myTable_filter {
+    float: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 5px 5px;
+}
+
+
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
